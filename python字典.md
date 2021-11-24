@@ -1,6 +1,7 @@
 ## 关于字典的创建  
 字典核心 key-value  
-1. 字典创建  
+
+### 字典创建  
 #创建空字典后 key-value式的赋值  
 a=dict()  
 a['name']='ming'  
@@ -22,8 +23,7 @@ a=['name','age']
 b=['ming',18]  
 c=zip(a,b)  
 dict(c)  
-
-2. 字典的查增删改   
+### 字典的查增删改   
 a['name']
 
 a['weight']=78
@@ -34,8 +34,7 @@ a['name']=siyi
 
 #还可以判断某个key 是否在列表中  
 'name' in a  
-
-3. dict method探索  
+### dict method探索  
 #第一类 取出key value 或者item的  
 list(a.keys())  
 list(a.values())  
@@ -43,4 +42,7 @@ list(a.items())
 #第二类 根据key获取value  
 a.get(key) #如果没有对应键值对返回的是None  
 a.setdefault(key,value) #如果找不到对应键值对就返回默认值  
+### 应用  
+两数之和的元素
+https://leetcode-cn.com/leetbook/read/tencent/xxqfy5/
 参考链接 http://c.biancheng.net/view/2212.html
